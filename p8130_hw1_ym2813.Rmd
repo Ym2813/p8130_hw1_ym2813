@@ -31,7 +31,7 @@ This is a discrete quantitative variable.
 depression_score_2.1 <- c(45, 39, 25, 47, 49, 5, 70, 99, 74, 37, 99, 35, 8, 59)
 mean(depression_score_2.1) # Data mean
 median(depression_score_2.1)  # Data median 
-max(depression_score_2.1, na.rm=TRUE) - min(depression_score_2.1, na.rm=TRUE)   # Data range 
+max(depression_score_2.1, na.rm = TRUE) - min(depression_score_2.1, na.rm = TRUE)   # Data range 
 sd(depression_score_2.1)  #Data standrd deviation
 ```
 The mean of the depression scores for the 14 individuals is `r mean(depression_score_2.1)`, the median of is `r median(depression_score_2.1)`, the range is `r max(depression_score_2.1, na.rm=TRUE) - min(depression_score_2.1, na.rm=TRUE)`, and the standard deviation is `r sd(depression_score_2.1)`
@@ -42,9 +42,10 @@ The mean of the depression scores for the 14 individuals is `r mean(depression_s
 boxplot(depression_score_2.1,horizontal = TRUE)
 hist(depression_score_2.1)
 ```
-The box plot of the data is right skewed as the median is closer to the lower quartile, and it is also an unimodal distribution. 
 
-## Additionally, 140 individuals with a recent car crash history alsoparticipated in the study.The depression scores for 13 of these individualsare given below:67, 50, 85, 43, 64, 35, 47, 97, 58, 58, 10, 56, 50
+The box plot of the data is right skewed as the median is closer to the lower quartile, and the mean `r mean(depression_score_2.1)` is right to the median `r median(depression_score_2.1)`. Also, it is a bimodal distribution because it has two peaks. 
+
+## Additionally, 140 individuals with a recent car crash history alsoparticipated in the study.The depression scores for 13 of these individualsare given below: 67, 50, 85, 43, 64, 35, 47, 97, 58, 58, 10, 56, 50
 
 ### a) Using R, make a side-by-side box plot of the depression scores stratified by type of accident.Make sure you label your figure appropriately.
 ```{r}
@@ -63,7 +64,8 @@ boxplot(depression_score_2.1,
 ```{r}
 hist(depression_score_2.2,xlab = "Depression Scores")
 ```
-The box plot of the depression score of those who had bike crash is right skewed and unimodal. The box plot for those who had car crash has an unimodal distribution 
+
+The box plot of the depression score of those who had bike crash is right skewed and bimodal distribution. The box plot for those who had car crash is right skewed and unimodal distribution.
 
 ### c) Comparing the 2 box plots,which group appears to have a lower typical depression score?
 It appears that the group who had bike crash have a lower typical depression score. 
@@ -78,7 +80,7 @@ The probability of even A is $$P=\frac{A}{All~Possible~Numbers}=\frac{6}{12}=\fr
 The probability of even A is $$P=\frac{B}{All~Possible~Numbers}=\frac{1}{12}$$
 
 ### c)Compute P(B U A).
-$$P(B\cup A)=\frac{1}{2}$$
+$$P(B\cup A)=P(A) + P(B)-P(B\cap A)=\frac{1}{2}+\frac{1}{12}-\frac{1}{12}=\frac{1}{2}$$
 
 ### d) Are events A and B independent? Why?Prove your answer.
 Event A and B is not independent:
